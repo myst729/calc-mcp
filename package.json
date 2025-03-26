@@ -1,0 +1,26 @@
+{
+  "name": "calc-mcp",
+  "version": "0.1.0",
+  "description": "",
+  "license": "MIT",
+  "author": "Leo Deng",
+  "keywords": [],
+  "type": "module",
+  "main": "lib/index.js",
+  "bin": {
+    "mcp-calc": "lib/index.js"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "start": "node lib/sse.js",
+    "inspect": "npx @modelcontextprotocol/inspector"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.8.0",
+    "express": "^5.0.1",
+    "zod": "^3.24.2",
+    "zod-to-json-schema": "^3.24.5"
+  }
+}
