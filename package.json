@@ -15,12 +15,20 @@
   ],
   "scripts": {
     "start": "node lib/sse.js",
-    "inspect": "npx @modelcontextprotocol/inspector"
+    "inspect": "npx @modelcontextprotocol/inspector",
+    "lint": "eslint",
+    "lint:fix": "eslint --fix"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.8.0",
     "express": "^5.0.1",
     "zod": "^3.24.2",
     "zod-to-json-schema": "^3.24.5"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.23.0",
+    "eslint": "^9.23.0",
+    "globals": "^16.0.0",
+    "jiti": "^2.4.2"
   }
 }
