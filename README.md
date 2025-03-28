@@ -11,11 +11,11 @@ npm ci
 1. 通过 SSE 服务
 
 ```sh
-npm start
-npm run inspector
+npm start           # 启动 SSE 服务
+npm run inspector   # 启动 web 调试器
 ```
 
-浏览器访问 http://localhost:5173/，连接 http://localhost:3001/sse
+浏览器访问 http://localhost:5173/ ，连接 http://localhost:3001/sse
 
 2. 通过 STDIO
 
@@ -41,3 +41,7 @@ echo '{"method":"tools/call","params":{"name":"add","arguments":{"a":2,"b":7}},"
   }
 }
 ```
+
+## 资料
+
+[Claude Desktop 调用本地 Node MCP 服务](https://myst729.github.io/posts/2025/claude-node-mcp/)
